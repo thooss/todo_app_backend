@@ -1,15 +1,56 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+li{
+    width:31%;
+    margin: 8px;
+    padding: 5px;
+}
+li:hover{
+    background-color:#dbdbdb;
+}
+h1 {
+    color: #ffea66;
+}
+ul {
+    list-style-type: none;
+}
+.pomodoro-estimate{
+    font-weight: bold;
+    background-color: #dbdbdb;
+    border-radius: 25px;
+    font-size: 14px;
+    padding:1px;
+}
+a:link {
+    text-decoration: none;
+    color:black;
+}
+#add-new-todo-button {
+    font-size: 20px;
+    color: #dcdee5;
+    outline: none;
+    background-color: #03A9F4;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px #90A4AE;
+    margin-top: 10px;
+    display: block;
+    border-style:none;
+    text-align:center;
+}
+#add-new-todo-button:active{
+    box-shadow: 2px 2px 1px #90A4AE;
+    color: #FFF;
+}
+#add-new-todo-button:hover{
+    box-shadow: 1px 1px 1px #90A4AE;
+}
+#new-todo-description {
+    border-radius: 5px;
+    padding: 2px;
+}
+#new-pomodoro-estimate{
+    border-radius: 5px;
+    padding: 2px;
+}
+.completed-todo{
+    text-decoration: line-through;
+}
