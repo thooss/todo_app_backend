@@ -1,11 +1,11 @@
+    <h3>
+        Todo-<%=params[:id]%>
+    </h3>
     <h2>
-         <input type="checkbox"> Make the curriculum <%=@pomodoro_estimate %> pomodoros
+         <input type="checkbox"> <%= @todo_description %> <%=@pomodoro_estimate %> pomodoros
     </h2>
-       <h3>
-        <%= @todo_description %>
-       </h3>
         <a href="#">Edit</a>
         <a href="#">Delete</a>
         <button>
-            <a href="index.html">Go Back...</a>
+            <a href="/todo/index">Go Back...</a>
         </button>
