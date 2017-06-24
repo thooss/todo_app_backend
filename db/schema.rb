@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 20170624200112) do
 
   create_table "todos", force: :cascade do |t|
     t.string   "description"
-    t.integer  "pomdoro_estimate"
+    t.integer  "pomodoro_estimate"
     t.boolean  "complete"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end
