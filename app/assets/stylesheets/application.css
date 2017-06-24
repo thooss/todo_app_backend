@@ -54,3 +54,15 @@ a:link {
 .completed-todo{
     text-decoration: line-through;
 }
+
+.show-link{
+    text-decoration: none;
+}
+
+#pomodoro-estimate{
+    font-weight: bold;
+    background-color: #dbdbdb;
+    border-radius: 25px;
+    font-size: 14px;
+    padding:1px;
+}
