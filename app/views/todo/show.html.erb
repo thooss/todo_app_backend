@@ -4,7 +4,7 @@
     <h2>
          <input type="checkbox"> <%= @todo.description %> <%=@todo.pomodoro_estimate %> pomodoros
     </h2>
-        <a href="#">Edit</a>
+        <a href="/todo/edit/<%= @todo.id %> ">Edit</a>
         <a href="#">Delete</a>
         <button>
             <a href="/todo/index">Go Back...</a>
