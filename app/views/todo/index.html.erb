@@ -1,58 +1,17 @@
 <div id="div">
         <h1>Workshop Todo List</h1>
-        <ul>
-            <div class="boxed">
-                <li> 
-                    <input type="checkbox"/>
-                    <a href="show/1"> 
-                    Take a nap
-                    <span class="pomodoro-estimate"> 7 pomodoros</span>
-                    </a>
-                </li>
-                <li> 
-                    <input type="checkbox"/>
-                    <a href="show/2"> 
-                    Sleep
-                    <span class="pomodoro-estimate"> 6 pomodoros</span>
-                </li>
-                <li> 
-                    <input type="checkbox"/>
-                    <a href="show/3"> 
-                    Dream 
-                    <span class="pomodoro-estimate"> 5 pomodoros</span>
-                </li>
-            </div>
-            <div class="boxed">
-                <li> 
-                    <input type="checkbox"/>
-                    <a href="show/4"> 
-                    Slumber  
-                    <span class="pomodoro-estimate"> 4 pomodoro</span>
-                </li>
-                <li> 
-                    <input type="checkbox"/>
-                    <a href="show/5"> 
-                    Hibernate 
-                    <span class="pomodoro-estimate"> 3 pomodoros</span>
-                </li>
+        <ul class="card">
+            <% @todos.each do |todo| %>
                 <li>
-                    <input type="checkbox"/>
-                    <a href="show/6"> 
-                    A suspension of consciousness
-                    <span class="pomodoro-estimate"> 2 pomodoros</span>
+                    <input type="checkbox" name=""/>
+                    <a href="show/<%= todo.id %>"><%= todo.description %></a>
+                    <span class="pomodoro-estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %></span>
                 </li>
-                <li> 
-                    <input type="checkbox"/>
-                    <a href="show/7"> 
-                    Rest
-                    <span class="pomodoro-estimate"> 1 pomodoros</span>
-                </li>
-            </div>
+            <% end %>
         </ul>
-        </div>
-        <div id=new-todo-block>
-        <input id="new-todo-description" type="text" placeholder="Enter Todo"> 
-        <input id="new-pomodoro-estimate" type="number" placeholder="Number of Pomodoros"> 
-        <input id="add-new-todo-button" type="submit" value="Add the Todo">
-        <script src="index.js"></script>
-        </div>
+
+    <div id="new-todo-block">
+        <a href="/todo/new" class="button add-new-todo-button" id="add-new-todo-button">Add a todo</a>
+    </div>
+    <script src="index.js"></script>
+</div>
