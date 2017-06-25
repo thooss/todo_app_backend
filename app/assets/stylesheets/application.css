@@ -43,6 +43,9 @@ a:link {
 #add-new-todo-button:hover{
     box-shadow: 1px 1px 1px #90A4AE;
 }
+#add-new-todo-button{
+     width:31%;
+}
 #new-todo-description {
     border-radius: 5px;
     padding: 2px;
@@ -65,4 +68,10 @@ a:link {
     border-radius: 25px;
     font-size: 14px;
     padding:1px;
+}
+#go-back-button{
+    margin: 10px;
+}
+body{
+    background-image: url("https://www.planwallpaper.com/static/images/Light-Wood-Background-Wallpaper.jpg")
 }
