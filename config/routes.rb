@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'Todo#index'
+  root to: 'todo#index'
   get "todo/show/:id" , to: "todo#show"
   get "todo/new" , to: "todo#new"
   get "todo/create", to: "todo#create"
